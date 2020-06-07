@@ -10,7 +10,7 @@ if(!$_SESSION["admin"]){
      <div class="card-body">
        <div class="row">
          <div class="col-lg-9 mt-5">
-           <h1 class="text-center text-white bold">BORRAR O EDITAR USUARIOS</h1>
+           <h1 class="text-center text-white bold">VER USUARIOS</h1>
            <br>
            <h3 class="text-center text-white bold">Usuarios registrados: <strong><?php $c= new mvcControlador(); $c->conteoAdd(); ?></strong></h3>
          </div>

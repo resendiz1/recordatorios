@@ -39,7 +39,7 @@ class mvcControlador
       if(isset($_POST["in_admin"])){
         $datos=array("user"=>$_POST["user"],
                      "pass"=>$_POST["pass"]);
-                     $respuesta = Datos::inAdminModelo($datos, "rooto");
+                     $respuesta = Datos::inAdminModelo($datos, "admin");
                      if ($respuesta["usuario"] == $_POST["user"] && $respuesta["secrets"] == $_POST["pass"]) {
                       session_start();
                       $_SESSION["admin"] = $respuesta["id_admin"];
@@ -168,14 +168,7 @@ class mvcControlador
                     </center>
                   </div>
                 </div>
-                <div class="card-footer row">
-                  <div class="col-lg-6 col-md-12 mb-1">
-                    <button class="btn btn-block btn-sm btn-danger"><strong>B o r r a r</strong></button>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <button class="btn btn-block btn-sm btn-warning"><strong>E d i t a r</strong></button>
-                  </div>
-                </div>
+
               </div>
         </div>
             ';

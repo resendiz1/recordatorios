@@ -108,7 +108,7 @@ if(isset($_GET["go"])){
       </div>
       <div class="modal-body">
           <form class="text-center border border-light p-5" method="post" enctype="multipart/form-data">
-            <input type="email" id="nom" class="form-control mb-4" name="nombre" placeholder="correo electrónico" required>
+            <input type="text" id="nom" class="form-control mb-4" name="nombre" placeholder="Nombre de usuario" required>
             <input type="number" id="edad" class="form-control mb-4" name="edad" placeholder="Edad" required>
             <div class="form-group">
               <input type="password" class="form-control" name="pass" placeholder="password">
